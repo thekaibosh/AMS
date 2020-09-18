@@ -12,7 +12,7 @@ import { DeviceAddComponent } from './device-add/device-add.component';
 import { IMqttServiceOptions, MqttModule } from 'ngx-mqtt';
 
 const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
-  hostname: "localhost",
+  hostname: "broker",
   port: 1883,
   protocol: "wss",
   path: ''

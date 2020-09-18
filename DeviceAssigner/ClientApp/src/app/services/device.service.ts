@@ -11,7 +11,7 @@ import { Device } from '../../models/device'
 })
 export class DeviceService {
 
-  private apiServer = "https://localhost:5001/api/devices";
+  private apiServer = "https://device-app:443/api/devices";
   httpOptions = {
     headers: new HttpHeaders({
       'Content-type': 'application/json'

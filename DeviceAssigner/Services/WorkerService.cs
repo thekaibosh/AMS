@@ -24,7 +24,7 @@ namespace DeviceAssigner.Services
             var random = new Random();
             var workTime = random.Next(5) * 1000;
             Thread.Sleep(workTime);
-            var factory = new ConnectionFactory() { HostName = "localhost" };
+            var factory = new ConnectionFactory() { HostName = "broker" };
             _device.Status = "assigned";
             //persist the "work" to the database
             _devices.ReplaceOne(d => d.Id == _device.Id, _device);
